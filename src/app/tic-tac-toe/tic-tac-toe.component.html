@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="score">
+    <span>Player1 score:{{ state.p1Score }}</span>
+    <button class="restartBtn" (click)="reset()">restart</button>
+    <span>Player2 score:{{ state.p2Score }}</span>
+  </div>
+  <div class="resultMsg">
+    <span>{{ state.outputMsg }}</span>
+  </div>
+  <div class="fields">
+    <div
+      #div
+      class="field"
+      *ngFor="let field of fields"
+      (click)="step(div, field)"
+    ></div>
+  </div>
+</div>
