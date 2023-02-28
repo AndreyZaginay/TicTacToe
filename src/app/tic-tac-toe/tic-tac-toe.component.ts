@@ -1,7 +1,8 @@
 import { takeUntil, Subject } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+
 import { TicTacToe } from './models/models';
 import { TicTacToeService } from './services/tic-tac-toe.service';
-import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tic-tac-toe',

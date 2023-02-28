@@ -1,6 +1,7 @@
-import { TicTacToeComponent } from './tic-tac-toe/tic-tac-toe.component';
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+import { TicTacToeComponent } from './tic-tac-toe/tic-tac-toe.component';
 
 const routes: Routes = [
   {

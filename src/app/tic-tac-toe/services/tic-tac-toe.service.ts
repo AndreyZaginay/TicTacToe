@@ -1,6 +1,7 @@
-import { TicTacToe } from './../models/models';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
+
+import { TicTacToe } from './../models/models';
 
 const DEFAULT_STATE: TicTacToe = {
   p1Score: 0,
@@ -10,6 +11,7 @@ const DEFAULT_STATE: TicTacToe = {
   fields: [],
   outputMsg: ''
 }
+
 @Injectable({
   providedIn: 'root'
 })
